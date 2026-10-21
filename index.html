@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raju Gaming Arena</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1020;color:#fff;
+font-family:Arial,sans-serif}
+header{padding:22px;background:#151d34;
+border-bottom:1px solid #303957}
+.logo{font-size:22px;font-weight:bold;color:#a78bfa}
+main{padding:16px;max-width:700px;margin:auto}
+.card{background:#171f35;padding:18px;
+border-radius:16px;margin-bottom:18px}
+.balance{font-size:28px;color:#a78bfa;font-weight:bold}
+.actions,.games{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button{width:100%;padding:13px;border:0;border-radius:10px;
+background:#7048e8;color:white;font-weight:bold}
+.game{background:#202a43;padding:18px 8px;
+border-radius:14px;text-align:center}
+.emoji{font-size:34px}
+small{color:#bdc7dc;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">🎮 RAJU GAMING ARENA</div>
+<p>Welcome to your gaming world</p>
+</header>
+<main>
+<div class="card">
+<h3>🪙 Virtual Wallet</h3>
+<div class="balance">1000 Coins</div>
+<small>Demo coins only. No real-money transactions.</small>
+<div class="actions" style="margin-top:18px">
+<button onclick="alert('Demo QR screen coming next')">Deposit</button>
+<button onclick="alert('Demo withdrawal form coming next')">Withdraw</button>
+</div>
+</div>
+<h3>🔥 Popular Games</h3>
+<div class="games">
+<div class="game"><div class="emoji">🚀</div><p>Aviator Demo</p><button onclick="play('Aviator')">Play</button></div>
+<div class="game"><div class="emoji">💣</div><p>Mines</p><button onclick="play('Mines')">Play</button></div>
+<div class="game"><div class="emoji">🧑‍🚀</div><p>Astronaut</p><button onclick="play('Astronaut')">Play</button></div>
+<div class="game"><div class="emoji">🐯</div><p>Tiger Dragon</p><button onclick="play('Tiger Dragon')">Play</button></div>
+<div class="game"><div class="emoji">🎨</div><p>Color Game</p><button onclick="play('Color Game')">Play</button></div>
+<div class="game"><div class="emoji">🎱</div><p>Bingo</p><button onclick="play('Bingo')">Play</button></div>
+</div>
+<p><small>Demo interface. Games and account features will be added in later steps.</small></p>
+</main>
+<script>
+function play(name){
+alert(name+' demo selected. Game coming soon!');
+}
+</script>
+</body>
+</html>
